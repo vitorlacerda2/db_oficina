@@ -1,1 +1,55 @@
-
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Entidade CLIENTE -->
+        <mxCell id="cliente" value="CLIENTE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell value="ID_Cliente (PK)" style="text" vertex="1" parent="cliente">
+          <mxGeometry x="10" y="10" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell value="Nome" style="text" vertex="1" parent="cliente">
+          <mxGeometry x="10" y="40" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell value="CPF/CNPJ" style="text" vertex="1" parent="cliente">
+          <mxGeometry x="10" y="70" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell value="Endereço" style="text" vertex="1" parent="cliente">
+          <mxGeometry x="10" y="100" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell value="Tipo (PF ou PJ)" style="text" vertex="1" parent="cliente">
+          <mxGeometry x="10" y="130" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Entidade VEÍCULO -->
+        <mxCell id="veiculo" value="VEÍCULO" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell value="ID_Veículo (PK)" style="text" vertex="1" parent="veiculo">
+          <mxGeometry x="10" y="10" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell value="Placa" style="text" vertex="1" parent="veiculo">
+          <mxGeometry x="10" y="40" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell value="Modelo" style="text" vertex="1" parent="veiculo">
+          <mxGeometry x="10" y="70" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell value="Ano" style="text" vertex="1" parent="veiculo">
+          <mxGeometry x="10" y="100" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell value="ID_Cliente (FK)" style="text" vertex="1" parent="veiculo">
+          <mxGeometry x="10" y="130" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Relacionamento CLIENTE -> VEÍCULO -->
+        <mxCell edge="1" parent="1" source="cliente" target="veiculo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
